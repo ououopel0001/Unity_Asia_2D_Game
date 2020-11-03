@@ -1,14 +1,17 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-    void startgame()
+    public void startgame()
     {
-
+        print("開始遊戲");
+        SceneManager.LoadScene("關卡1");
     }
 
-    void quitgame()
+    public void quitgame()
     {
-
+        print("結束遊戲");
+        Application.Quit();
     }
 }
